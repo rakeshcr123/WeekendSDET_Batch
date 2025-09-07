@@ -1,9 +1,13 @@
 package com.orangehrm.obj_utilities;
 
+import java.awt.List;
+
 import org.openqa.selenium.WebElement;
 
 public class DropDown 
 {
+	static WebElement Option;
+	static List ListOfOptions;
 	//selectOptions
 	public static void selectDropdown(WebElement element, Object val)
 	{
@@ -53,10 +57,10 @@ public class DropDown
 		 case "FirstSelected": Option = objects_Utilities.HandlingDropdown(element).getFirstSelectedOption();
 		    break;
 		    
-		 case "AllSelected": ListOfOptions = objects_Utilities.HandlingDropdown(element).getAllSelectedOptions();
+		 case "AllSelected": ListOfOptions = (List) objects_Utilities.HandlingDropdown(element).getAllSelectedOptions();
 		    break;
 		    
-		 case "AllOptions": ListOfOptions = objects_Utilities.HandlingDropdown(element).getOptions();
+		 case "AllOptions": ListOfOptions = (List) objects_Utilities.HandlingDropdown(element).getOptions();
 		    break;
 		    
 		 default:System.out.println("Invalid Input");
