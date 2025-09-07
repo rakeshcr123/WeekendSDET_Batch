@@ -6,5 +6,6 @@ public interface I_ApplicationConstants
 	String screenShotsPath = "C://Users//rakes//TESTNG//HRM//src//test//resources//Defects//";
 	String excelPath = "C:\\Users\\rakes\\TESTNG\\HRM\\src\\test\\resources\\ExcelData\\EmployeeCreationData.xlsx";
 	String propertyPath = ".//src//test//resources//PropertyFiles//Config.properties";
+	String reportPath = ".//src//test//resources//ExtentReports//";
 
 }
